@@ -1,0 +1,94 @@
+/* Background Video */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Game Container */
+#game {
+  width: 90%;
+  max-width: 500px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e979d8, #fad0c4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Game Title */
+#h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Instructions */
+.instructions {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Game Buttons */
+.button {
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f4676c, #fad0c4);
+  color: black;
+  font-size: 24px;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+/* Result Output */
+#output {
+  border: 2px solid #2a2929;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #000;
+  font-size: 1.2rem;
+  color: rgb(37, 229, 69);
+  text-align: center;
+  min-height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  #game {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .button {
+    width: 90px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+  }
+}
